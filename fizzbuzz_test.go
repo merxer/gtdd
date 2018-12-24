@@ -17,3 +17,12 @@ func TestWhenInput_2_want_2(t *testing.T) {
 		t.Errorf("Got %s, expected %s", fb, expected)
 	}
 }
+
+func TestWhenInput_3_want_fizz(t *testing.T) {
+	fb := FizzBuzz(3)
+	expected := "fizz"
+
+	if fb != expected {
+		t.Errorf("Got %s, expected %s", fb, expected)
+	}
+}
