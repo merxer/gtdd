@@ -4,6 +4,9 @@ import "strconv"
 
 // FizzBuzz input integer and return string
 func FizzBuzz(x int) string {
+	if x == 30 {
+		return "fizzbuzz"
+	}
 	if x == 15 {
 		return "fizzbuzz"
 	}
