@@ -26,3 +26,12 @@ func TestWhenInput_3_want_fizz(t *testing.T) {
 		t.Errorf("Got %s, expected %s", fb, expected)
 	}
 }
+
+func TestWhenInput_5_want_buzz(t *testing.T) {
+	fb := FizzBuzz(5)
+	expected := "buzz"
+
+	if fb != expected {
+		t.Errorf("Got %s, expected %s", fb, expected)
+	}
+}
